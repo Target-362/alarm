@@ -19,5 +19,6 @@ android.permissions = VIBRATE, POST_NOTIFICATIONS, WAKE_LOCK, USE_EXACT_ALARM, R
 android.api = 34
 android.minapi = 21
 android.archs = arm64-v8a, armeabi-v7a
+android.ndk_api = 21
 
 android.accept_sdk_license = True
