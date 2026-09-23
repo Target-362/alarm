@@ -46,10 +46,11 @@ jobs:
         run: |
           yes | buildozer -v android debug
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: math-alarm-apk
-          path: math_alarm/bin/*.apk
-          
+      - name: Build APK
+        working-directory: math_alarm
+        env:
+          CURL_CA_BUNDLE: /etc/ssl/certs/ca-certificates.crt
+          REQUESTS_CA_BUNDLE: /etc/ssl/certs/ca-certificates.crt
           PYTHONHTTPSVERIFY: "0"
+        run: |
+          yes | buildozer -v android debug
