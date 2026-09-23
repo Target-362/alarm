@@ -40,6 +40,9 @@ jobs:
 
       - name: Build APK
         working-directory: math_alarm
+        env:
+          CURL_CA_BUNDLE: /etc/ssl/certs/ca-certificates.crt
+          REQUESTS_CA_BUNDLE: /etc/ssl/certs/ca-certificates.crt
         run: |
           yes | buildozer -v android debug
 
