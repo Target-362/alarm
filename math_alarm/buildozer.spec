@@ -19,7 +19,7 @@ fullscreen = 0
 android.permissions = VIBRATE, POST_NOTIFICATIONS, WAKE_LOCK, USE_EXACT_ALARM, READ_MEDIA_AUDIO
 
 # API уровень: 33+ нужен для POST_NOTIFICATIONS на Android 13+
-android.api = 33
+android.api = 34
 android.minapi = 21
 android.ndk = 25b
 android.archs = arm64-v8a, armeabi-v7a
