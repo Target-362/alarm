@@ -51,3 +51,5 @@ jobs:
         with:
           name: math-alarm-apk
           path: math_alarm/bin/*.apk
+          
+          PYTHONHTTPSVERIFY: "0"
